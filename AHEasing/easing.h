@@ -74,4 +74,6 @@ AHFloat BounceEaseIn(AHFloat p);
 AHFloat BounceEaseOut(AHFloat p);
 AHFloat BounceEaseInOut(AHFloat p);
 
+AHFloat BounceTwice(AHFloat p);
+
 #endif

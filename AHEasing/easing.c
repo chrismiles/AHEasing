@@ -300,3 +300,17 @@ AHFloat BounceEaseInOut(AHFloat p)
 		return 0.5 * BounceEaseOut(p * 2 - 1) + 0.5;
 	}
 }
+
+AHFloat BounceTwice(AHFloat p)
+{
+    AHFloat cutoff1 = 4.0f/6.0f;
+    
+    if(p < cutoff1)
+    {
+	return sinf(p/cutoff1*M_PI);
+    }
+    else
+    {
+	return (1.0 - cutoff1) * sinf((p-cutoff1)/(1.0f-cutoff1)*M_PI);
+    }
+}

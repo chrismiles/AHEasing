@@ -27,6 +27,7 @@ enum CurveType
 	CurveTypeElastic,
 	CurveTypeBack,
 	CurveTypeBounce,
+	CurveTypeBounce2,
 };
 
 enum EasingMode

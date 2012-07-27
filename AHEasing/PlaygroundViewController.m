@@ -128,6 +128,9 @@
 		case CurveTypeBounce:
 			currentFunction = (currentEasing == EaseIn) ? BounceEaseIn : (currentEasing == EaseOut) ? BounceEaseOut : BounceEaseInOut;
 			break;
+		case CurveTypeBounce2:
+		    currentFunction = BounceTwice;
+		    break;
 	}
 	
 	[graphView setEasingFunction:currentFunction];
